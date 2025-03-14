@@ -1,0 +1,21 @@
+<?php if ($block->shouldShowModal()): ?>
+<div id="privacy-modal" class="custom-modal">
+  <div class="custom-modal-content">
+    <h2>Aviso de Atualização da Política de Privacidade</h2>
+    <p>
+      A política de privacidade foi atualizada. Por favor, leia as novas condições e confirme seu aceite.
+    </p>
+    <div class="modal-buttons">
+      <button id="accept-privacy" class="btn btn-primary">Aceitar</button>
+      <button id="disable-modal" class="btn btn-secondary">Não mostrar novamente</button>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "privacyModal": {}
+    }
+}
+</script>

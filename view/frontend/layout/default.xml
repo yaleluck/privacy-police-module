@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- Importa o CSS do módulo -->
+        <css src="YaleLuck_PrivacyPolicy::css/modal.css"/>
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Vendor\PrivacyPolicy\Block\PrivacyModal"
+                   name="privacy_policy_modal"
+                   template="YaleLuck_PrivacyPolicy::privacy_modal.phtml" />
+        </referenceContainer>
+    </body>
+</page>
